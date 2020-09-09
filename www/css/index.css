@@ -1,54 +1,108 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
-* {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
-}
-
 body {
-    -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color: #E4E4E4;
-    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+font-family: 'Fjalla One', sans-serif;
+font-weight: bold;
+color: #2a2a2a;
+background-color: #3eb0f7;
+-webkit-appearance: none;
+-webkit-touch-callout: none;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-touch-callout: none; -webkit-user-select: none;
 }
 
-.service-wrapper {
-    background: white;
-    margin: 10px;
-    font-size: large;
+h1 {
+text-align: center;
+font-family: 'Fjalla One', sans-serif;
+color:white;
 }
 
-.service {
-    background: gray;
-    color: white;
-    padding: 10px;
-    font-size: large;
+#mainPage {
+text-align:center;
 }
 
-.characteristic {
-    padding: 5px 10px;
-    background: white;
-    color: black;
-    font-size: large;
+#detailPage {
+text-align:center;
+font-size: 2em;
+}
+
+#detailPage div {
+margin: 20px;
+}
+
+#detailPage button {
+margin-top: 40px;
+font-size: 0.6em; /* undo 2em from parent */
+}
+
+ul {
+list-style: none;
+border-bottom: 1px solid #d3d3d3;
+text-align: center;
+font-family: 'Fjalla One', sans-serif;
+color:white;
+}
+
+li {
+margin-left: -40px;
+padding: 5px;
+padding-top: 10px;
+min-height: 50px;
+border-top: 1px solid #d3d3d3;
+font-size: 16px;
+}
+
+#resultDiv {
+font: 16px "Source Sans", helvetica, arial, sans-serif;
+font-weight: 200;
+display: block;
+-webkit-border-radius: 6px;
+width: 100%;
+height: 140px;
+text-align: left;
+overflow: auto;
+}
+
+#statusDiv {
+text-align: center;
+margin-top: 9px;
+color:white;
+}
+
+.fadein {
+opacity: 1;
+-webkit-transition: opacity 1s ease-in;
+}
+
+.fadeout {
+opacity: 0;
+-webkit-transition: opacity 1s ease-out;
+}
+@media screen and (device-aspect-ratio: 40/71) {
+h1 {
+font-size: 1.6em;
+padding-top: 15px;
+}
+
+input[type=text] {
+font-size: 0.5em;
+}
+}
+.styled-button-9 {
+background: #00A0D1;
+background: -moz-linear-gradient(top,#00A0D1 0%,#008DB8 100%);
+background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#00A0D1),color-stop(100%,#008DB8));
+background: -webkit-linear-gradient(top,#00A0D1 0%,#008DB8 100%);
+background: -o-linear-gradient(top,#00A0D1 0%,#008DB8 100%);
+background: -ms-linear-gradient(top,#00A0D1 0%,#008DB8 100%);
+background: linear-gradient(top,#00A0D1 0%,#008DB8 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00A0D1',endColorstr='#008DB8',GradientType=0);
+padding:8px 20px;
+color:#cfebf3;
+font-family: 'Fjalla One', sans-serif;
+font-size:16px;
+margin-top:22%;
+border-radius:40px;
+-moz-border-radius:40px;
+-webkit-border-radius:40px;
+border:1px solid #095B7E
+
 }
