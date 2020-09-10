@@ -9,7 +9,6 @@
     </author>
     <content src="index.html" />
     <gap:plugin name="cordova-plugin-ble-central" source="npm" />
-    <preference name="phonegap-version" value="cli-6.1.0" />
     <access origin="*" />
     <preference name="orientation" value="portrait" />
 </widget>
