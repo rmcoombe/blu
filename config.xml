@@ -8,7 +8,7 @@
            Don Coleman
     </author>
     <content src="index.html" />
-    <gap:plugin name="cordova-plugin-ble-central" source="npm" />
+    <plugin name="cordova-plugin-ble-central" source="npm" />
     <access origin="*" />
     <preference name="orientation" value="portrait" />
 </widget>
